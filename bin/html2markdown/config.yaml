@@ -1,0 +1,25 @@
+# 网页转 markdown 配置
+url: 'https://algo.zhiyuansofts.cn/blog/sanyinchen/t4omlybe8j'
+
+# 临时文件（html、资源）与最终 markdown 都落在这里
+out_dir: './out'
+
+# http-request 插件
+render: 'auto'            # auto: 静态页正文过短时自动切无头浏览器；也可写 true / false
+render_wait_until: 'networkidle'
+render_extra_wait: 1.5
+timeout: 60
+retry: 2
+download_assets: true
+asset_types: [ 'css', 'js', 'img', 'font', 'media', 'other' ]
+same_origin_only: false
+max_assets: 300
+css_depth: 2
+concurrency: 8
+rewrite_links: true
+
+# html2markdown 插件
+image_link: 'local'       # local: 指向本地 assets 目录；remote: 还原成原始网址
+front_matter: true
+heading_style: 'atx'
+bullets: '-'

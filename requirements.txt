@@ -1,0 +1,13 @@
+# 框架
+PyYAML
+colorlog
+dacite
+
+# http-request / html2markdown 插件
+requests
+beautifulsoup4
+lxml
+markdownify
+
+# 可选：render 模式（前端渲染的页面）需要，装完还要执行 playwright install chromium
+playwright
